@@ -6,6 +6,7 @@ public class LineComparison {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+
         //Displaying Welcome Message for User
         System.out.println("Welcome to Line Comparison Computation Program");
 
@@ -50,6 +51,17 @@ public class LineComparison {
         }
         else {
             System.out.println("Length of FirstLine & SecondLine are not equal");
+        }
+
+        // Comparing FirstLine & SecondLine
+        int result = (firstLine.compareTo(secondLine));
+
+        if(result > 0) {
+            System.out.println("FirstLine is greater than SecondLine");
+        } else if(result < 0) {
+            System.out.println("SecondLine is greater than FirstLine");
+        } else {
+            System.out.println("FirstLine is equals to SecondLine");
         }
 
     }
